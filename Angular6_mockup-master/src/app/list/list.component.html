@@ -1,0 +1,35 @@
+<p class="text-center">2016 KPI:$15M Renewal Revenue(Strategic Goal)</p>
+<h2 class="text-center">Add entities</h2>
+<div class="context-area">
+	<div class="search-area">
+		<span class="addon">
+			<i class="material-icons">search</i>
+		</span>
+		<input matInput type="text" name="search" placeholder="Search Entity" [(ngModel)]="query" id="listSearch" class="addon-main">		
+		<span class="addon">
+			<i class="material-icons">filter_list</i>
+		</span>
+	</div>
+	<mat-list role="list" *ngFor="let lock of locked | search: query">
+	  <mat-list-item role="listitem">
+	  	<mat-checkbox [(ngModel)]="lock.selected" (click)="selectEntity(lock)"></mat-checkbox>
+	  	<div>
+	    	<p class="list-name">{{lock.name}}</p>
+	    	<p class="list-info">{{lock.info}}</p>
+	  	</div>
+	  </mat-list-item>
+	</mat-list>
+</div>
+<div class="div-connect">
+	<button mat-button type="button" class="color-green btn-connect align-center" routerLink="/connected">CONNECT</button>
+</div>
+
+
+<!-- <div class="panel panel-default col-xs-12 col-sm-11" *ngFor="let lock of locked | LockFilter: query">
+    <input type="checkbox" (change)="openModal($event, lock)" class="check" id="{{lock.ID}}">
+    <label [for]="lock.ID" class="check-label"></label>
+    <h3 class="card-text name">{{lock.User}}</h3>
+    <h3 class="card-text auth">{{lock.AuthID}}</h3>
+    <h3 class="card-text form">{{lock.FormName}}</h3>
+    <h3 class="card-text win">{{lock.WinHandle}}</h3>
+</div> -->

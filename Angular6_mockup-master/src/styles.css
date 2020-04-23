@@ -1,0 +1,147 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .mat-selection-list .mat-list-option .mat-list-item-content-reverse {
+  flex-direction: initial;
+}
+
+.mat-pseudo-checkbox {
+    margin-right: 10px;
+}
+
+.mat-selection-list .mat-list-item .mat-list-text>*, .mat-selection-list .mat-list-option .mat-list-text> .list-info {
+    font-size: 12px;
+}
+
+.mat-selection-list .mat-list-item .mat-list-text>*, .mat-selection-list .mat-list-option .mat-list-text> .list-name {
+    font-size: 16px;    
+}
+
+body.list .mat-list .mat-list-item .mat-list-item-content {
+  display: block;
+}
+
+body.list .mat-list-item-content > * {
+  display: inline-block;
+}
+
+body.list .mat-list-item-content > mat-checkbox {
+  height: 100%;
+}
+
+body.list .mat-list-item-content > *:last-child {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+body.connected {
+    background: #ddd;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+}
+
+body.connected app-root {
+  width: 350px;
+  margin: auto;
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+input.mat-checkbox-input {
+  display: none;
+}
+
+.mat-list-item-ripple.mat-ripple {   
+    border-top: 1px solid #c7c7c7;
+}
+
+.mat-checkbox input ~ .mat-checkbox-ripple {
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+}
+
+input:checked ~ .mat-checkbox-ripple {
+    background-color: #2743a0;
+    position: absolute;
+}
+
+input:checked ~ .mat-checkbox-ripple:after {
+    display: block;
+}
+
+.mat-checkbox-ripple:after {
+    left: 5px;
+    top: 1px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.mat-checkbox-inner-container {
+  top: 20px;
+}
+
+.search-area {
+   font-size: 14px;
+}
+.search-area > * {
+  position: relative;
+  top: 11px;
+}
+.search-area .addon {
+  display: block;
+  float: left;
+  line-height: 40px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+.search-area .addon i {
+  line-height: 40px;
+}
+
+.search-area .addon-main {
+  float: left;
+  display: block;
+  top: 0;
+  line-height: 40px;
+  /*text-indent: 15px;*/
+  height: 60px;
+  width: calc(100% - 120px);
+  padding: 0;
+}

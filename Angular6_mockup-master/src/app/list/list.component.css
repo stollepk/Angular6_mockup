@@ -1,0 +1,123 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.lists {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.lists li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.lists li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+
+
+.lists li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.lists .text {
+  position: relative;
+  top: -3px;
+}
+.lists .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+mat-pseudo-checkbox.mat-pseudo-checkbox {
+    position: absolute;
+    left: 15px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+.context-area {
+  display: table;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #c7c7c7;
+  box-shadow: 1px 2px 4px rgba(180, 180, 180, 0.7);
+}
+
+mat-list-option {
+  border-top: 1px solid #c7c7c7;
+  padding: 10px 0;
+}
+
+.search-area, .mat-list {
+  display: table-row;
+  height: 60px;
+}
+
+.search-area input {
+  border: none;
+}
+
+
+.align-center {
+  margin: 0 auto;
+}
+
+.div-connect {
+  width: fit-content;
+    margin: 40px auto;
+}
+
+
+.color-green {
+  background-color: #3bae50;
+  color: white;
+}
+
+.btn-connect {
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 1px 2px 4px rgba(180, 180, 180, 0.7);
+  font-family: Arial;
+  border: none;
+  border-radius: 3px;
+}
+
+.list-name, .list-info {
+    margin: 0;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+.list-info{
+  font-size: 12px;
+}

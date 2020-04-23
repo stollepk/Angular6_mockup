@@ -1,0 +1,12 @@
+.text-center {
+	text-align: center;
+}
+
+.align-center {
+	margin: 0 auto;
+}
+
+.div-connect {
+	width: fit-content;
+    margin: 40px auto;
+}

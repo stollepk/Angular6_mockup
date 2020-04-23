@@ -1,0 +1,19 @@
+<mat-accordion> 
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="panel-title">
+        <button mat-button type="button" routerLink="/list" class = "plus-button">
+          <i class="material-icons">add</i>
+        </button>
+        <p>Entities Connected({{entities.length}})</p>
+      </mat-panel-title>  
+    </mat-expansion-panel-header>     
+
+  	<mat-list *ngFor="let entity of entities">
+	  	<div class="divider"></div>
+	    <div class="list-name">{{entity.name}}</div>
+	    <div class="list-info">{{entity.info}}</div>
+  	</mat-list>
+  </mat-expansion-panel>
+</mat-accordion>
